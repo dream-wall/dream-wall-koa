@@ -1,0 +1,29 @@
+{
+  "name": "dream-wall",
+  "version": "1.0.0",
+  "description": "人都是有梦想的，这只在于你是否找到了实现它的捷径。",
+  "author": "savoygu@163.com/banjuanshutong@126.com",
+  "private": true,
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-compress": "^2.0.0",
+    "koa-cors": "^0.0.16",
+    "koa-mount": "^3.0.0",
+    "koa-router": "^7.2.1",
+    "mysql2": "^1.4.2",
+    "sequelize": "^4.8.3"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
