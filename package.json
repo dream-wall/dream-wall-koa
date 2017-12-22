@@ -5,8 +5,14 @@
   "author": "savoygu@163.com/banjuanshutong@126.com",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "lint": "eslint ./ --cache --ignore-pattern .gitignore",
+    "precommit-msg": "echo 'Pre-commit checks...' && exit 0"
   },
+  "pre-commit": [
+    "precommit-msg",
+    "lint"
+  ],
   "dependencies": {
     "koa": "^2.3.0",
     "koa-bodyparser": "^4.2.0",
