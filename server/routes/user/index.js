@@ -1,11 +1,11 @@
 /**
  * Created by 胡志甫 on 2017/12/3.
  */
-const dreamContoller=require('../../controllers/user');
+const userController = require('../../controllers/user');
 
-module.exports = function(router){
-	router.post('/register', dreamContoller.addUser);
-  router.post('/login', dreamContoller.findUser);
-  router.get('/users', dreamContoller.getUsers);
-  router.post('/withdraw', dreamContoller.destoryUser);
-}
+module.exports = function (router) {
+  router.post('/register', userController.addUser);
+  router.post('/login', userController.findUser);
+  router.get('/users', userController.getUsers);
+  router.post('/withdraw', userController.destoryUser);
+};
